@@ -15,6 +15,13 @@ public class Constants {
     public final static String DATE_TIME = "dateTime";
     public final static   String INITIALIZED = "initialized";
 
+
+    public final static   String GET_TRANSACTION = "getTransactions";
+
+    public final static   String GET_SUMARY = "getSumary";
+
+
+
     public static final String REGISTER_OPERATION = "register";
     public static final String GET_RESULT_OPERATION = "getResult";
     public static final String LOGIN_OPERATION = "login";

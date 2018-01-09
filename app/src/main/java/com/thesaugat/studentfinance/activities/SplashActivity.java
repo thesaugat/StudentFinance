@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
-import com.thesaugat.studentfinance.HomeActivity;
 import com.thesaugat.studentfinance.R;
 import com.thesaugat.studentfinance.helper.Constants;
 import com.thesaugat.studentfinance.utils.SharedPreferencesUtils;

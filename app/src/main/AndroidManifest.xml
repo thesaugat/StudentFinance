@@ -40,7 +40,7 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".activities.HomeActivity"></activity>
     </application>
 
 </manifest>

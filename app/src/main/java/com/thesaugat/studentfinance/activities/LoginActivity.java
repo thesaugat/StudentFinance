@@ -16,7 +16,6 @@ import com.mobsandgeeks.saripaar.Validator;
 import com.mobsandgeeks.saripaar.annotation.Email;
 import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 import com.mobsandgeeks.saripaar.annotation.Password;
-import com.thesaugat.studentfinance.HomeActivity;
 import com.thesaugat.studentfinance.R;
 import com.thesaugat.studentfinance.helper.Constants;
 import com.thesaugat.studentfinance.server.ApiClient;
