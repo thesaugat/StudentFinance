@@ -101,8 +101,8 @@ public class SignUpActivity extends AppCompatActivity implements Validator.Valid
                     Toast.makeText(SignUpActivity.this, response.body().getMessage(), Toast.LENGTH_SHORT).show();
                     goToLogin();
 
-                }
-                else{
+                } else {
+                    progress.setVisibility(View.GONE);
                     Toast.makeText(SignUpActivity.this, response.body().getMessage(), Toast.LENGTH_SHORT).show();
 
                 }

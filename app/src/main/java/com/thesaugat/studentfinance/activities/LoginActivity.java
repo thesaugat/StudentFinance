@@ -95,6 +95,7 @@ public class LoginActivity extends AppCompatActivity implements Validator.Valida
                     goToHome();
 
                 } else {
+                    progress.setVisibility(View.GONE);
                     Toast.makeText(LoginActivity.this, response.body().getMessage(), Toast.LENGTH_SHORT).show();
 
                 }
