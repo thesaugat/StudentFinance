@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1058565054601",
+    "firebase_url": "https://studentfinance-62b3d.firebaseio.com",
+    "project_id": "studentfinance-62b3d",
+    "storage_bucket": "studentfinance-62b3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058565054601:android:bd0379def1a0769b",
+        "android_client_info": {
+          "package_name": "com.thesaugat.studentfinance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058565054601-oh6pn4hd1hcrq4plslvfukj11u3afo6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGgJGJPwwWvpTO1twEEVzpsT-VkSfyjJY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
