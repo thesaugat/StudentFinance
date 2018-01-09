@@ -1,5 +1,6 @@
 package com.thesaugat.studentfinance.activities;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
@@ -43,7 +44,7 @@ public class HomeActivity extends AppCompatActivity {
     @BindView(R.id.name)
     TextView name;
     ApiServices apiServices;
-
+    ProgressDialog pd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +52,9 @@ public class HomeActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         apiServices = ApiClient.getClient().create(ApiServices.class);
 
+         pd = new ProgressDialog(this);
+        pd.setMessage("loading");
+        pd.show();
 
         ServerRequest request = new ServerRequest();
         request.setOperation(Constants.GET_SUMARY);
@@ -91,6 +95,7 @@ public class HomeActivity extends AppCompatActivity {
         call1.enqueue(new Callback<List<TransactionResponse>>() {
             @Override
             public void onResponse(Call<List<TransactionResponse>> call, Response<List<TransactionResponse>> response) {
+                pd.dismiss();
                 TransactionAdapter transactionAdapter = new TransactionAdapter(getApplicationContext(), response.body());
                 RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
                 historyContainer.setLayoutManager(mLayoutManager);
